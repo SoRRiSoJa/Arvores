@@ -5,6 +5,7 @@
  */
 package poarvores;
 
+import BPtree.BTPlus;
 import NArea.NArea;
 
 /**
@@ -17,7 +18,7 @@ public class POArvores {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        NArea arvore = new NArea();
+        BTPlus arvore = new BTPlus();
         
         arvore.insere(10);
         arvore.insere(30);

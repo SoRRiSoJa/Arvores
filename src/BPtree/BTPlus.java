@@ -153,13 +153,14 @@ public class BTPlus implements Param {
 
     }
     public void inOrden(BPNode raiz) {
-        if (raiz != null) {
-            for (int i = 0; i < raiz.getTl(); i++) {
-                inOrden(raiz.getLig(i));
-                System.out.println("Aqui:" + raiz.getInfo(i));
-            }
-            inOrden(raiz.getLig(raiz.getTl()));
+        while(raiz.getLig(0)!=null){
+            raiz=raiz.getLig(0);
         }
+        while(raiz!=null){
+            raiz.exibeNo();
+            raiz=raiz.getProx();
+        }
+            
     }
     public BPNode getRaiz(){
         return this.raiz;

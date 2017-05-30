@@ -38,7 +38,11 @@ public class BPNode implements Param {
         this.vInfo[0] = info;
         this.tl = 1;
     }
-
+    public void exibeNo(){
+        for(int i=0;i<tl;i++){
+            System.out.println("["+vInfo[i]+"]");
+        }
+    }
     public void setInfo(int pos, int info) {
         this.vInfo[pos] = info;
     }
@@ -134,5 +138,5 @@ public class BPNode implements Param {
     public void setProx(BPNode prox) {
         this.prox = prox;
     }
-
+   
 }
